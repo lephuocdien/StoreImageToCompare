@@ -2,12 +2,14 @@ namespace Finding
 {
     public enum Pattern
     {
-        Pattern1,//giam :gia giam tu 65 ve 500
-        Pattern2,//tang :gia tu 500 tang len,
-        Pattern3,//tang :gia vuot 500
-        
-        
- 
+        Pattern1,//XRP tang gia
+        Pattern2,//XRP giam gia
+        Pattern3,//Lich su giao dich BUY
+        Pattern4,//Lich su giao dich SELL
+
+
+
+
 
 
     }
@@ -191,14 +193,15 @@ namespace Finding
             switch (pattern)
             {
                 case Pattern.Pattern1:
-                    return "Gia giam tu 65 ve 500";
+                    return "XRP tang gia";
                 case Pattern.Pattern2:
-                    return "Gia tang tu 500 di len";
+                    return "XRP giam gia";
                 case Pattern.Pattern3:
-                    return "Gia tang vuot 500";
+                    return "History Buy";
+                case Pattern.Pattern4:
+                    return "History Sell";
 
-                
-              
+
                 default:
                     return "No explanation available.";
             }
